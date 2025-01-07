@@ -1,6 +1,6 @@
 import React from 'react';
 import { formattedDate } from '../helpers/commonHelper';
-import { User } from '../graphQL/grphql';
+import { User } from '../graphQL/graphql';
 
 interface ViewUserProps {
 	selectedUser: User | null;

@@ -11,7 +11,7 @@ const authLink = setContext((_, { headers }) => {
 	return {
 		headers: {
 			...headers,
-			authorization: token ? `Bearer ${token}` : `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFtaXQuc2hhaEBicmFpbnZpcmUuY29tIiwiaWQiOjYsInJvbGUiOjQzLCJ0b2tlblVVSUQiOiI5ZTRhZGM3MC0wMGMzLTQ4MjItODliMC1lZTZjODc5OTFiZTEiLCJ1dWlkIjoiNTExZGNiNDItZTE5MC00OWE3LThjOGUtZWMwODljNGNkODExIiwiaWF0IjoxNzM0NDE4MTQ2LCJleHAiOjE3MzQ0MjE3NDZ9.etVE9o_Ijt8tlXKEfzIdyuZGG8bhUTlXRt6C1VCowjE`,
+			authorization: token ? `Bearer ${token}` : `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFtaXQuc2hhaEBicmFpbnZpcmUuY29tIiwiaWQiOjYsInJvbGUiOjQzLCJ0b2tlblVVSUQiOiIzOGU3NTUxNy0zYzk1LTQ2MzktYTVhNi1lYTM3NTkzZWZlOTIiLCJ1dWlkIjoiNTExZGNiNDItZTE5MC00OWE3LThjOGUtZWMwODljNGNkODExIiwiaWF0IjoxNzM0NjczNTU2LCJleHAiOjE3MzQ2NzcxNTZ9.6xzoRKnfGBcybJQczH7q-E_HLOVWhcNCPvIpWt2sXqI`,
 		},
 	};
 });

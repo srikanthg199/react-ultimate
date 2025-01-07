@@ -7,8 +7,9 @@ import { Popup } from './PopUp';
 import { GET_USERS_LIST } from '../graphQL/queries/user';
 import ViewUser from './ViewUser';
 import { formattedDate } from '../helpers/commonHelper';
-import { User, UserDataType } from '../graphQL/grphql';
+import { User, UserDataType } from '../graphQL/graphql';
 import { CHANGE_USER_STATUS, CREATE_USER, DELETE_USER, UPDATE_USER } from '../graphQL/mutations/user';
+import { BeatLoader } from 'react-spinners';
 
 const sortOrder = 'desc';
 const sortBy = 'created_at';
@@ -139,7 +140,7 @@ function UserTable() {
 			});
 	};
 
-	if (loading || changeUserStatusLoader || deleteUserLoader || createUserLoader || updateUserLoader) return <p>Loading...</p>;
+	if (loading || changeUserStatusLoader || deleteUserLoader || createUserLoader || updateUserLoader) return <BeatLoader className='absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2' />;
 	if (error || errorMessage) {
 		return <p className='text-red-500 text-3xl'>Error: {error?.message ?? errorMessage ?? 'An unknown error occurred'}</p>;
 	}

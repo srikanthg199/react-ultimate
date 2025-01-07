@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { User } from '../graphQL/grphql';
+import { User } from '../graphQL/graphql';
 
 function CreateUserForm({ selectedUser, onSubmit }: { selectedUser: User | null; onSubmit: (value: any) => void }) {
 	// Initialize the form data with selectedUser data if it's available
